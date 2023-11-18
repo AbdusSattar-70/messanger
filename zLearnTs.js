@@ -1,27 +1,10 @@
-const { privateDecrypt } = require("crypto");
-
-function updateValue(val) {
-  val = 42;
-}
-
-let num = 10;
-updateValue(num);
-console.log(num); // Output: 10 (unchanged)
-const a = Object.freeze(updateValue);
-console.log(a)
-
-class Hello {
-  // publice
-  private
-  protected
-  static var2 ='jdjd'
-  constructor(car){
-    this.car = car
-    Hello.var2 =
+var showValue = function(obj) {
+  var values = Object.values(obj);
+  if (values.length > 0) {
+    return values.join(',');
   }
+  return "empty";
+};
 
-}
-
-class Calo extends Hello {
-
-}
+var result = showValue({ name: "sattar", age: 23 });
+console.log(result);
