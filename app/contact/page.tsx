@@ -5,7 +5,7 @@ const ContactPage = () => {
     <div>
       Contact page
       <Link href='/'>Go to Home</Link>
-      </div>
+    </div>
   )
 }
 
