@@ -2,11 +2,10 @@ import Link from "next/link";
 
 const ContactPage = () => {
   return (
-    <div>
+    <div className="container mx-auto flex min-h-screen flex-col items-center justify-center">
       Contact page
-      <Link href='/'>Go to Home</Link>
     </div>
-  )
-}
+  );
+};
 
 export default ContactPage;
