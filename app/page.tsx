@@ -1,10 +1,10 @@
 import Link from "next/link";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Hello Messenger App!</h1>
-      <Link href={"/contact"}>Go to contact</Link>
+    <main className="flex min-h-screen flex-col items-center justify-center">
+      <Navbar />
     </main>
-  )
+  );
 }
