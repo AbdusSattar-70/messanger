@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-const AboutPage = () => {
+const AboutPage = (): React.ReactNode => {
   return (
-    <div className="flex-col flex justify-center items-center min-h-screen">
+    <div className="flex min-h-screen flex-col items-center justify-center">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem,
         pariatur ab at ducimus natus porro error saepe quidem incidunt
