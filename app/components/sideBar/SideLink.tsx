@@ -1,6 +1,4 @@
-import Link from "next/link";
-import ActiveLink from "../ActiveLink";
-
+import ActiveLink from "@/components/ActiveLink";
 const SideLink = (): React.ReactNode => {
   const sideLink = [
     {
@@ -24,7 +22,10 @@ const SideLink = (): React.ReactNode => {
   return (
     <>
       {sideLink.map(({ path, title }) => (
-        <li key={path} className="bg-slate-400 p-4 text-white">
+        <li
+          key={path}
+          className="mt-4 inline-block space-y-2 border bg-purple-600 px-3 py-2 font-semibold text-white"
+        >
           <ActiveLink href={path} isRoot activeClassName="text-slate-950">
             {title}
           </ActiveLink>

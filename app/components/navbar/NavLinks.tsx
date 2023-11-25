@@ -1,4 +1,4 @@
-import ActiveLink from "../ActiveLink";
+import ActiveLink from "@/components/ActiveLink";
 
 const NavLink = (): React.ReactNode => {
   const navLink = [
