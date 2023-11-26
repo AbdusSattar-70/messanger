@@ -33,10 +33,7 @@ const SingleBlog: React.FC<SingleBlogProps> = async ({ params }) => {
           {id}. {title}
         </h2>
         <p>{body}</p>
-        <Link
-          href={"/blogs"}
-          className="mt-4 inline-block space-y-2 border bg-purple-600 px-3 py-2 font-semibold text-white"
-        >
+        <Link href={"/blogs"} className="btn btn-primary">
           Back to Blogs
         </Link>
       </li>
