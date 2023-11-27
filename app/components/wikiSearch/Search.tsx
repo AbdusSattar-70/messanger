@@ -14,17 +14,17 @@ const Search = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="join mt-4 flex justify-center">
+    <form onSubmit={handleSubmit} className="join mt-4 flex  justify-center">
       <input
         type="text"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        className="input join-item input-bordered"
+        className="input join-item input-bordered w-[50%]"
         placeholder="Search anything you want!"
       />
       <button
         type="submit"
-        className="btn btn-primary join-item rounded-r-full"
+        className="btn btn-accent join-item w-[50%] rounded-r-full"
       >
         Wiki Search 🚀
       </button>

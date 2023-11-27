@@ -31,7 +31,7 @@ const NavLink = (): React.ReactNode => {
   return (
     <>
       {navLink.map(({ path, title }) => (
-        <li key={path} className="mx-3">
+        <li key={path} className="sm:mx-1 md:mx-3">
           <ActiveLink
             isRoot={path === "/"}
             href={path}

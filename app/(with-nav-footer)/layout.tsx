@@ -4,12 +4,12 @@ import Search from "@/components/wikiSearch/Search";
 
 const WithNavLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="container mx-auto">
+    <>
       <Navbar />
       <Search />
       {children}
       <Footer />
-    </div>
+    </>
   );
 };
 
