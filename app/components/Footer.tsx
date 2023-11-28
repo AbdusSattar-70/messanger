@@ -1,39 +1,42 @@
+"use client";
 const Footer = (): React.ReactNode => {
   return (
-    <footer className="footer bg-base-200 text-base-content p-10">
+    <footer className="footer bg-base-200 p-10 text-base-content">
       <nav>
         <header className="footer-title">Services</header>
-        <a className="link link-hover">Branding</a>
-        <a className="link link-hover">Design</a>
-        <a className="link link-hover">Marketing</a>
-        <a className="link link-hover">Advertisement</a>
+        <a className="link-hover link">Branding</a>
+        <a className="link-hover link">Design</a>
+        <a className="link-hover link">Marketing</a>
+        <a className="link-hover link">Advertisement</a>
       </nav>
       <nav>
         <header className="footer-title">Company</header>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+        <a className="link-hover link">About us</a>
+        <a className="link-hover link">Contact</a>
+        <a className="link-hover link">Jobs</a>
+        <a className="link-hover link">Press kit</a>
       </nav>
       <nav>
         <header className="footer-title">Legal</header>
-        <a className="link link-hover">Terms of use</a>
-        <a className="link link-hover">Privacy policy</a>
-        <a className="link link-hover">Cookie policy</a>
+        <a className="link-hover link">Terms of use</a>
+        <a className="link-hover link">Privacy policy</a>
+        <a className="link-hover link">Cookie policy</a>
       </nav>
-      <form>
+      <form onSubmit={(e) => e.preventDefault()}>
         <header className="footer-title">Newsletter</header>
-        <fieldset className="form-control w-80">
+        <fieldset className="form-control">
           <label className="label">
             <span className="label-text">Enter your email address</span>
           </label>
-          <div className="join">
+          <div className="join ">
             <input
               type="text"
               placeholder="username@site.com"
-              className="input input-bordered join-item"
+              className="input join-item input-bordered w-[50%]"
             />
-            <button className="btn btn-primary join-item">Subscribe</button>
+            <button className="btn btn-secondary join-item w-[50%] rounded-r-full">
+              Subscribe
+            </button>
           </div>
         </fieldset>
       </form>
